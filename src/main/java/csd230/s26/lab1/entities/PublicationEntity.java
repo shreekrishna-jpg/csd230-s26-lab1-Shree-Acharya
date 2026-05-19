@@ -1,7 +1,6 @@
 package csd230.s26.lab1.entities;
 
 import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Entity;
 
 @Entity
@@ -28,6 +27,6 @@ public abstract class PublicationEntity extends ProductEntity {
     public void setTitle(String title) { this.title = title; }
     public double getPrice() { return price; }
     public void setPrice(double price) { this.price = price; }
-    public int getCopies() { return copies; }
+    public Integer getCopies() { return copies; }
     public void setCopies(int copies) { this.copies = copies; }
 }
